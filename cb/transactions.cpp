@@ -78,6 +78,12 @@ struct Transactions:public Callback
             #if defined(LITECOIN)
                 const char *addr = "LKvTVnkK2rAkJXfgPdkaDRgvEGvazxWS9o";
                 warning("no addresses specified, using popular address %s", addr);
+            #elif defined(FAIRBRIX)
+                const char *addr = "fca1JykZfJ85MiX8JfGuyKYQ3pkpjsafBg";
+                warning("no addresses specified, using example address %s", addr);
+            #elif defined(TENEBRIX)
+                const char *addr = "tJNrBA3j92GcU3yon7mhmKAUVyUeRYaHMD";
+                warning("no addresses specified, using example address %s", addr);
             #else
                 const char *addr = "1dice8EMZmqKvrGE4Qc9bUFf9PX3xaYDp";
                 warning("no addresses specified, using satoshi's dice address %s", addr);

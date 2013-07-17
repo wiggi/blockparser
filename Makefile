@@ -8,6 +8,8 @@ INC =                           \
         -I.                     \
         -DNDEBUG                \
 #        -DLITECOIN              \
+#        -DFAIRBRIX              \
+#        -DTENEBRIX              \
 
 COPT =                          \
         -g0                     \

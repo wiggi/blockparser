@@ -369,6 +369,10 @@ static void mapBlockChainFiles()
     std::string coinName(
         #if defined LITECOIN
             "/.litecoin/"
+        #elif defined FAIRBRIX
+                "/.fairbrix/"
+        #elif defined TENEBRIX
+                "/.tenebrix/"
         #else
             "/.bitcoin/"
         #endif
@@ -516,6 +520,10 @@ static bool buildBlock(
     static const uint32_t expected =
     #if defined(LITECOIN)
         0xdbb6c0fb
+    #elif defined(FAIRBRIX)
+        0xdbf9dbf9
+    #elif defined(TENEBRIX)
+        0xd9b4daf9
     #else
         0xd9b4bef9
     #endif

@@ -430,6 +430,10 @@ bool addrToHash160(
         memcpy(1+data, hash160, kRIPEMD160ByteSize);
         #if defined(LITECOIN)
             data[0] = 48;
+        #elif defined(FAIRBRIX)
+            data[0] = 95;
+        #elif defined(TENEBRIX)
+            data[0] = 127;
         #else
             data[0] = 0;
         #endif

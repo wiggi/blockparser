@@ -257,6 +257,10 @@
         const uint8_t *hash160,
         #if defined(LITECOIN)
               uint8_t type = 48
+        #elif defined(FAIRBRIX)
+              uint8_t type = 95
+        #elif defined(TENEBRIX)
+              uint8_t type = 127
         #else
               uint8_t type = 0
         #endif
